@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var PessoaFisica_1 = require("./src/model/PessoaFisica");
+var PessoaJuridica_1 = require("./src/model/PessoaJuridica");
+var um = new PessoaJuridica_1.PessoaJuridica("Biriri", "2364758986590-");
+um.setNome("Guanabara");
+um.setCnpj("6543238");
+console.log(um.getNome());
+console.log(um.getCnpj());
+var dois = new PessoaFisica_1.PessoaFisica("Rebeca", "234679865309754");
+dois.setNome("Carol");
+dois.setCpf("987532890087");
+console.log(dois.getNome());
+console.log(dois.getCpf());
